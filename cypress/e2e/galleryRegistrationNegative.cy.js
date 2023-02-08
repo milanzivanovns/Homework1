@@ -51,7 +51,7 @@ describe("Negative registration (Not enough characters in the password)", () => 
 })
 
 
-describe.only("Negative registration (Confirmed password is not the same as password)", () => {
+describe("Negative registration (Confirmed password is not the same as password)", () => {
     it("Try to register wiht wrong confirmation of password", () => {
         cy.visit("/");
         cy.get('a[href="/register"]').click()
